@@ -23,7 +23,6 @@
 
 // console.log(g + a + f + a2 + r);
 
-
 // let str = 'Hello World'
 
 // str = str.replace(' ',' No ')
