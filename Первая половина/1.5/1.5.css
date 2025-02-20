@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 20px;
+    
+    background-image: url(https://i.pinimg.com/originals/33/d0/2c/33d02c67b4a6e90abe2d7a58f764edd8.jpg);
+    
+    background-size: 50% 50%;
+    
+    background-repeat: no-repeat !important;
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+
+    background-position: center;
+
+    border-radius: 20px;
+}
+

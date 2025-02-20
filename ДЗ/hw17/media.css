@@ -1,0 +1,85 @@
+@media (max-width: 1050px) {
+    
+    .solarsytem {
+        .mars {
+            .jupiter {
+                h1 {
+                    font-weight: 600;
+                    font-size: 48px;
+                }
+            }
+                .saturn {
+                    .diona {
+                        .encelad {
+                            display: grid;
+                            grid-template-columns: repeat(3, 297px);
+                            grid-template-rows: repeat(1, 194px);
+                            .mimas {
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+
+@media (max-width: 428px) {
+    
+.solarsytem {
+    display: flex;
+    justify-content: start;
+    .sun {
+        .venus {
+            display: flex;
+            align-items: center;
+            gap: 176px;
+                    
+            .image {
+                width: 27px;
+                height: 19px;
+            }
+                    
+            .cheto {
+                display: flex;
+                gap: 20px;
+                a {
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+            }
+        }
+        .mercury {
+            display: none;
+        }
+    }
+
+    .mars {
+        .jupiter {
+            display: flex;
+            flex-direction: column;
+            row-gap: 9px;
+            h1 {
+                font-weight: 600;
+                font-size: 28px;
+            }
+
+            .setting {
+                display: none;
+            }
+        }
+            .saturn {
+                .diona {
+                    .encelad {
+                        display: grid;
+                        grid-template-columns: repeat(1, 390px);
+                        grid-template-rows: repeat(3, 198px);
+                        .mimas {
+                            background-color: #0300A7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}       

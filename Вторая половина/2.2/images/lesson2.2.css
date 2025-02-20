@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+h2 {
+    color: #0499DD;
+}
+
+.solarsystem {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 115vh;
+
+    .sun {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 46px;
+    
+        .venus {
+            padding-left: 164px;
+        }
+    
+        .mercury a:nth-child(1) {
+            text-decoration: none;
+            color: gold;
+        }
+
+        .mercury a{
+            text-decoration: none;
+            color: white;
+        }
+    
+        .mercury {
+            height: 0vh;
+            display: flex;
+            gap: 20px;
+            padding-right: 160px;
+        }
+    }
+
+    .earth {
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        padding: 110px 0px 0px 160px;
+
+        h1 {
+            font-size: 96px;
+            color: white;
+        }
+    }
+
+    .earth button {
+            background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+            border: none;
+            border-radius: 60px;
+            color: white;
+            width: 230px;
+            height: 50px;
+            font-weight: 700;
+    }
+}
+
+.neptun {
+    display: flex;
+    row-gap: 48px;
+    flex-direction: column;
+}
+
+.mars {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 89px;
+    width: 182vh;
+
+    .fobos {
+        padding-left: 240px;
+    }
+    
+    .deymos {
+        a {
+            color: black;
+        }
+    }
+}
+
+.jupite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.saturn {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(3, 497px);
+
+    .uranus button {
+            margin-top: 20px;
+
+            background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+            border: none;
+            border-radius: 40px;
+            color: white;
+            width: 160px;
+            height: 40px;
+            font-weight: 700;
+    }
+
+    .uranus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 16px;
+        padding-top: 200px;
+
+        
+        p {
+            color: white;
+            font-size: 12px;
+        }
+
+        h3 {
+            color: gold;
+            font-size: 14px;
+        }
+
+        .miranda {
+            margin: 10px;
+            display: flex;
+        }
+    }
+
+    .uranus:nth-child(1) {
+        background-image: url(./images/Rectangle\ 13.png);
+        background-size: 100%;
+    }
+
+    .uranus:nth-child(2) {
+        background-image: url(./images/Rectangle\ 13\(1\).png);
+        background-size: 100%;
+    }
+
+    .uranus:nth-child(3) {
+        background-image: url(./images/Rectangle\ 13\(2\).png);
+    }
+}
+

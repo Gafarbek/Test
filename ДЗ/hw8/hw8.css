@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.mercury {
+    font-family: "Oi";
+    margin: 10% 0% 0% 0%;
+}
+
+.venus {
+    font-family: "Barriecito";
+}
+
+.earth {
+    font-family: "Hanalei";
+}
+
+.mars {
+    font-family: "Lavishly Yours";
+}
+
+.jupiter {
+    font-family: "Teko";
+}
+
+.saturn {
+    font-family: "Black Ops One";
+}
+.uranus {
+    font-family: "Sour Gummy";
+}
+
+.neptun {
+    font-family: "Yellowtail";
+}
+
+.io {
+    font-family: "Sixtyfour Convergence";
+}
+
+.europe {
+    font-family: "Foldit";
+}

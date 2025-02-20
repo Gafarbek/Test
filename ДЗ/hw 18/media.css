@@ -1,0 +1,23 @@
+@media (max-width: 429px) {
+    header {
+        gap: 0;
+        justify-content: start;
+        padding: 10px 13px 24px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 275px;
+            .menu {
+                display: block;
+            }
+        }
+
+        .info {
+            display: none;
+        }
+
+    }
+}
+
