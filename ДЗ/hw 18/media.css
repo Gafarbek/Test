@@ -239,6 +239,11 @@
                     
                 }
 
+                .development:hover {
+                    display: none;
+
+                }
+
                 .development:nth-child(3) {
                     background-color: #DDDDFF;
                 }
@@ -275,6 +280,8 @@
                         display: none;
                     }
                 }
+
+                
 
                 .development:nth-child(7) {
                     display: none;
