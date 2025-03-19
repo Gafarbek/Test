@@ -126,3 +126,147 @@
 
 
 // console.log(null ?? true); // true
+
+
+
+
+
+// let name = prompt('Your name');
+
+// if (15 > 16) {
+//     console.log(`Hello, ${name} `);
+
+// } else {
+//     console.log(`Bye, ${name} `);
+    
+// }
+
+
+
+
+
+// const email = prompt('Your email: ');
+
+// if (email.endsWith('@gmail.com') || 
+//     email.endsWith('@mail.com') || 
+//     email.endsWith('@yandex.ru')) {
+//     const password = prompt('Your password: ')
+    
+//     if (password.length >= 8) {
+//         alert('You are welcome!')
+//     } else {
+//         alert(`password should be at least 8 char. remaining: ${password.length}`)    
+//     }
+
+// } else {
+//     alert('Email can end with @gmai.com, @mail.ru, @yandex.ru')    
+// }
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+/* 
+===== Классная работа =====
+25.02.2025
+.
+.
+.
+.
+.
+const username = prompt('Your name: ');
+
+if (username.startsWith('a') ||
+    username.startsWith('A')) {
+
+    const age = prompt('Your age: ');
+    if (age.length <= 18) {
+
+        const wallet = prompt('Enter amount: ')
+        if ( wallet.length <= 100) {
+    
+            const people = prompt('How many people want to enter?: ')
+            if ( people.length <= 5) {
+                alert ('You are welcome')
+            } else {
+                alert (`Sorry ${username}, but we can't miss that many people.`)
+            }
+
+        } else {
+            alert ('There is not enough money in your account')
+        }
+    } else {
+        alert ('Entry to minors is prohibited')
+    }
+
+ } else {
+     alert (`Sorry but we couldn't find you`)
+ }
+
+*/
+
+
+
+/*
+
+===== Домашняя работа =====
+25.02.2025
+.
+.
+.
+.
+.
+let userName = 'Alex';
+let accountPassword = 7777;
+let balance = 10000;
+
+let enterName = prompt('Введите ваше имя: ')
+
+if (userName == enterName) {
+
+    let enterPassword = prompt('Введите ваш пороль: ')
+
+    if (accountPassword == enterPassword) {
+
+        let yourBalance = prompt('Введите сумму: ')
+
+        if (yourBalance < balance) {
+
+            let theBalance = balance - yourBalance
+            alert (`Вы сняли ${yourBalance} на счету осталось ${theBalance}.`)
+
+        } else {
+            alert ('Недостаточно средств')
+        }
+
+    } else {
+        alert (`Пороль указон не правильно`)
+    }
+
+} else {
+    alert (`Пользователь ${entername} не найден`)
+}
+
+*/
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*
+const userName = 'Alex';
+const accountPassword = 7777;
+const balance = 10000;
+
+const inputName = prompt('Your name: ')
+
+switch (inputName) {
+    case userName: 
+    const inputPassword = Number(prompt('Your password: '));
+    
+    switch (inputPassword) {
+        case accountPassword:
+        const money = Number(prompt('How much do you wanna get: '));
+        alert(`Left: ${balance - money}\nGot: ${money}`);
+    }
+}
+*/
