@@ -270,3 +270,518 @@ switch (inputName) {
     }
 }
 */
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+//  Массивы
+
+/*
+let names = ['Sunnat', 'Umid', 'Gafar', 'Shokhjahon', 'Islom', 'Muattar'];
+
+let yourName = prompt('Your name: ')
+
+yourName = yourName.charAt(0).toUpperCase() + 
+yourName.slice(1).toLowerCase();
+
+if (names.indexOf(yourName) !== -1) {
+    alert('Уже есть!');
+} else if (yourName.length < 7) {
+    alert('Не достаточно символов!')
+} else {
+    alert(`Вас зовут ${yourName}`)
+}
+*/
+
+
+/*
+let arr = ['text', 'alex', 'bob', 'adams']
+
+let res = arr.filter((item) => item[0] == 'a');
+
+console.log(res);
+*/
+
+
+/*
+let nums = [11, 14, 19, 16]
+
+let odd = nums.filter(item => item % 2 == 0)
+let even = nums.filter(item => item % 2 == 1)
+
+console.log(odd);
+console.log(even);
+*/
+
+
+/*
+let arr = ['Alex', 'Bob', 'John', 'Amir', 'Azizbek', 'Tyler']
+let arr2 = ['Davlat', 'Arslan', 'Steve', 32, true, 45]
+
+let newArr = arr.concat(arr2.splice(0, 3)) 
+
+newArr = newArr.filter(item => item[0].toLowerCase() =='a')
+
+console.log(newArr);
+*/
+
+
+
+
+/*
+const words = ['peach', 'apple', 'grape', 'apricot', 'kiwi', 'orange', 'banana', 'ananas']
+
+// 1:
+const newWords = words.filter(words => words[0] == 'a')
+console.log(newWords);
+
+// 2:
+const sortWords = words.sort()
+console.log(sortWords);
+
+// 3:
+const promptWords = prompt('Введите слова: ')
+if (promptWords) {
+    words.push(promptWords)
+    console.log(words);
+}
+
+let num1 = [6, 18, 23, 3, 2, [22, 59]]
+let num2 = [101, 4, 59, 89, 0, 7,31, 12]
+
+let newNum = num1.concat(num2).flat()
+console.log(newNum);
+
+let numbers = [42, 'Alex', 'John', 18, 23, 100, 1]
+let names = ['Tyler', 'Stark', 'Jake', 'Igor']
+
+let allName = numbers.filter(item => typeof item == 'string')
+
+console.log(numbers.filter(Number));
+console.log(names.concat(allName));
+*/
+
+/*
+
+let words = ['test', 'hello world', 'Adams', 'text', 'lorem', 'alex']
+
+let newWords = []
+
+words.forEach(item =>{
+    if (item[0].toLowerCase() == 'a') {
+        newWords.push(item)
+    }
+})
+
+
+console.log(newWords);
+*/
+
+
+/*
+
+let total = '';
+
+
+words.forEach((item) => {
+    if (total.length < item.length) {
+        total = item;
+    }
+})
+console.log(total);
+*/
+
+
+/*
+let arr = [11, 20, 24, 2, 55, 112, 37, 65]
+let even = []
+let odd = []
+
+arr.forEach((num) => {
+    if (num % 2 == 0) {
+        even.push(num)
+    } else {
+        odd.push(num)
+    }
+})
+
+console.log(even);
+console.log(odd);
+*/
+
+
+/*
+const words = ['peach', 'apple', 'grape', 'apricot', 'kiwi', 'orange', 'banana', 'ananas']
+
+// 1:
+const newWords = words.filter(words => words[0] == 'a')
+console.log(newWords);
+
+// 2:
+const sortWords = words.sort()
+console.log(sortWords);
+
+// 3:
+const promptWords = prompt('Введите слова: ')
+if (promptWords) {
+    words.push(promptWords)
+    console.log(words);
+}
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+let num1 = [6, 18, 23, 3, 2, [22, 59]]
+let num2 = [101, 4, 59, 89, 0, 7,31, 12]
+
+let newNum = num1.concat(num2).flat()
+console.log(newNum);
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+let numbers = [42, 'Alex', 'John', 18, 23, 100, 1]
+let names = ['Tyler', 'Stark', 'Jake', 'Igor']
+
+let allName = numbers.filter(item => typeof item == 'string')
+
+console.log(numbers.filter(Number));
+console.log(names.concat(allName));
+*/
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+// let names = ['Alex', 'John', 'Smith', 'Tyler']
+// let res =[]
+
+// names.forEach(item => {
+//     let test = item.split('').reverse().join('')
+
+//     res.push(test)
+// })
+
+// console.log(res)
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*
+let arr = [
+    [115, 50, 25],
+    [75, 12, 99],
+    [34, 36, 55],
+];
+
+let resultat = []
+
+arr.forEach((item) =>{
+    let total = 0
+
+    item.forEach((num) =>{
+        total += num
+    })
+
+    resultat.push(total)
+})
+
+console.log(resultat)
+*/
+
+/*
+let price = [15000, 3200, 10200, 455000, 123000, 7000]
+let max = price[0];
+let min = price[0];
+
+price.forEach(price => {
+    if (price > max) max = price;
+    if (price < min) min = price;
+})
+ 
+console.log(max);
+console.log(min);
+*/
+
+
+/*
+let nums = [12,3, 57, 34,90, 1, 10, 9]
+let odd =[];
+let even = [];
+
+nums.forEach (num => {
+    if (num % 2== 0) {
+        odd.push(num)
+    } else even.push(num)
+})
+
+console.log(odd);
+console.log(even);
+*/
+
+
+
+
+// for (let i = 1; i <= 10; i++) {
+    
+//     for (let a = 1; a <= 10; a++) {
+//         console.log(`${i} * ${a} = ${a * i}`);
+//     }
+// }
+
+// for (let i = 0; i <= 20; i += 2) {
+//     console.log(i);   
+// }
+
+// let arr = [10, 55.34, 23.01, 52, 102, 1.11]
+// let filter = []
+
+// for (let num of arr) {
+//     if (num.toString().includes('.')) {
+//         filter.push(num)
+//     }
+// }
+
+// console.log(filter);
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+// let cars = [
+//     {
+//       name: "BMW",
+//       color: "white",
+//       model: "M4",
+//       price: 80000,
+//       year: 2020,
+//     },
+//     {
+//       name: "Gentra",
+//       color: "black",
+//       model: "2",
+//       price: 15000,
+//       year: 2022,
+//     },
+//     {
+//       name: "Kia",
+//       color: "white",
+//       model: "K5",
+//       price: 42000,
+//       year: 2023,
+//     },
+//     {
+//       name: "Matiz",
+//       color: "red",
+//       model: "best",
+//       price: "6000",
+//       year: 2011,
+//     },
+//     {
+//       name: "Malibu",
+//       color: "gray",
+//       model: "2",
+//       price: 37000,
+//       year: 2021,
+//     },
+//     {
+//       name: "Nexia",
+//       color: "blue",
+//       model: "3",
+//       price: 12000,
+//       year: 2011,
+//     },
+//   ];
+  
+// let max = cars[0];
+// let min = cars[0];
+// let total = 0;
+
+// for (let car of cars) {
+
+//   let carPrice = Number(car.price);
+//     if (carPrice > max.price) {
+//         max = car
+//     }
+//     if (carPrice < min.price) {
+//         min = car
+//     }
+//     total += carPrice
+// }
+
+// // в max сохраняем самую дорогую машину
+// console.log(max);
+
+// // в min сохраняем самую дешевую машину
+// console.log(min);
+
+// // в total = общая сумма всех машин
+// console.log(total);
+
+// // в latest машины последних 5 лет
+//   let latest = [];
+
+//   for (let item of cars) {
+//     if (item.year >= 2020) {
+//         latest.push(item)
+//     }
+//   }
+
+//   console.log(latest);
+
+
+//   let arr = [
+//     {
+//         "userId": 1,
+//         "id": 1,
+//         "title": "delectus aut au`tem",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 2,
+//         "title": "quis ut nam facilis et officia qui",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 3,
+//         "title": "fugiat veniam minus",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 4,
+//         "title": "et porro tempora",
+
+//         "completed": true
+//     },
+//     {
+//         "userId": 1,
+//         "id": 5,
+//         "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 6,
+//         "title": "qui ullam ratione quibusdam voluptatem quia omnis",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 7,
+//         "title": "illo expedita consequatur quia in",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 8,
+//         "title": "quo adipisci enim quam ut ab",
+//         "completed": true
+//     },
+//     {
+//         "userId": 1,
+
+//         "id": 9,
+//         "title": "molestiae perspiciatis ipsa",
+//         "completed": false
+//     },
+//     {
+//         "userId": 1,
+//         "id": 10,
+//         "title": "illo est ratione doloremque quia maiores aut",
+//         "completed": true
+//     },
+// ]
+
+// let a = {
+//     count: 0,
+//     arr: []
+// }
+
+// let b = {
+//     count: 0,
+//     arr: []
+// }
+
+// for (const task of arr) {
+//   if (task.completed) {
+//     a.arr.push(task)
+//   } else {
+//     b.arr.push(task)
+//   }
+// }
+
+// console.log(a);
+// console.log(b);
+
+// let max = companies[0]
+// let min = companies[0]
+
+// for (const item of companies) {
+
+//   if (item.spend > max.spend) {
+//     max = item
+//   } else {
+//     min = item
+//   }
+// }
+
+// console.log(max);
+// conso
+// le.log(min);
+        
+
+
+
+
+
+/*
+const companies = [
+  { name: "Apple", income: [10000, 12000, 500], spend: 23000 },
+  { name: "Microsoft", income: [10000, 12000, 1500], spend: 17000 },
+  { name: "Google", income: [15000, 20000, 4000], spend: 7000 },
+  { name: "SpaceX", income: [150000, 62000 2000], spend: 99000 },
+  { name: "GM motors", income: [15000, 20000, 4000], spend: 100 },
+];
+
+let totalIncome = 0
+
+
+for (let i = 0; i < companies.length; i++) {
+  let incomeSum = 0;
+  companies[i].total = 0;
+
+  for (let j = 0; j < companies[i].income.length; j++) {
+    incomeSum += companies[i].income[j];
+  }
+
+  totalIncome += incomeSum - companies[i].spend
+}
+
+
+console.log(companies);
+console.log(totalIncome);
+*/
+
+
+
+// const user = prompt('Введите одну из предложенных цифр: 1 - Камень, 2 - Ножница, 3 - Бумага.')
+
+// const random = Math.ceil(Math.random() * 3) + 1 
+
+// console.log(random);
+
+
+ 
+
+
+
+// for (let item of user) {
+//   const random = Math.floor(Math.random() * 3) + 1 
+//   console.log(random);
+
+  // if (item < random) {
+  //   alert('Ты выиграл')
+  // } else if (item = random) {
+  //   alert('Ничья')
+  // } else {
+  //   alert('ТЫ проиграл')
+  // }
+  
+// } 
+  
+  
+
