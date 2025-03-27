@@ -101,8 +101,8 @@
 // console.log(5 === 5); // true
 // console.log(5 !== 5); // false
 
-// console.log(!true); // false
 // console.log(!false); // true
+// console.log(!true); // false
 
 
 // console.log(5 != '5'); // false
@@ -261,7 +261,7 @@ const inputName = prompt('Your name: ')
 
 switch (inputName) {
     case userName: 
-    const inputPassword = Number(prompt('Your password: '));
+    const inputPassword = Number(prompt('Your password:'));
     
     switch (inputPassword) {
         case accountPassword:
@@ -270,6 +270,7 @@ switch (inputName) {
     }
 }
 */
+
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 //  Массивы
@@ -537,6 +538,8 @@ console.log(even);
 
 // console.log(filter);
 
+
+
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 // let cars = [
@@ -785,3 +788,206 @@ console.log(totalIncome);
   
   
 
+// // Сначало хотел сделать с одним словом но решил добавить рандомные слова
+// let words = ['world', 'home', 'family']
+// let word = words[Math.floor(Math.random() * words.length)].split('');
+
+// // let words = 'world'
+// // let word = words.split('')
+// let arrFill = Array(word.length).fill('_')
+// let used = []
+
+// console.log(used);
+
+
+// while (arrFill.includes('_')) {
+//     let user = prompt(`${arrFill.join(' ')}`).toLowerCase()
+
+//     if (!user || user.length !== 1) {
+//         alert('Больше одной буквы нельзя')
+//         continue;
+//     }
+
+//     if (used.includes(user)) {
+//         alert('Эта буква уже есть')
+//         continue;
+//     }
+
+//     used.push(user) 
+
+//     if (word.includes(user)) {
+//     word.forEach((elements, index) => {
+//             if (elements == user) {
+//                 arrFill[index] = user
+//             }
+//         });
+//     }
+
+//     if (!arrFill.includes('_')) {
+//         alert(`Ты угадал слова ${word.join('')}`)
+//         break;
+//     }
+// }
+
+
+
+
+
+// function getAge(age) {
+    
+//     if (isNaN(age) || age < 18) {
+//         alert ('Ты куда лезишь?')
+//     } else {
+//         alert('Добро пожаловать')
+//         return true;
+//     }
+
+// }
+
+
+
+// function task(a, b) {
+
+//     alert(`${a + b} \n ${a - b}\n ${a / b} \n ${a * b} \n ${ a ** b} \n ${a % b}`)
+    
+// }
+
+
+
+// function max_name(name1, name2, name3) {
+    
+//     let longName = name1
+//     const names = [name2, name3] 
+
+//     names.forEach(long => {
+//         if (long.length > longName.length) {
+//             longName = long
+//         }
+//     })
+    
+//     return longName;
+    
+// }
+
+
+
+// function min() {
+//     let getNum = []
+
+//     for (let num of arguments) {
+//         if (typeof num === 'number') {
+//             getNum.push(num)
+//         } else if (Array.isArray(num)) {
+//             getNum.push(...num)
+//         } else if (typeof num === 'object' && num !== null) {
+//             getNum.push(...Object.values(num))
+//         }
+//     }
+
+//     return Math.min(...getNum)
+// }
+
+
+
+
+
+// const user = +prompt('Сколько тебе лет?')
+
+// if (getAge(user)) {
+
+//     const v1 = parseFloat(prompt('Введите число a:'))
+//     const v2 = parseFloat(prompt('Введите число b:'))
+
+//     if (!isNaN(v1, v2)) {
+
+//         task(v1, v2)
+
+//     } else {
+//         alert('Это не число')
+//     }
+
+//     console.log(max_name('Alex', 'George', 'Michael'));
+
+//     console.log(min(1, 2));
+//     console.log(min([1, 2]));
+//     console.log(min({a: 1, b: 2}));
+//     console.log(min({a: 1, b: 2}, {a: 11, b: 12}));
+// }
+
+
+
+
+
+
+// const companies = [
+//     { id: 1, name: "Компания А", industry: "IT", employees: 150, revenue: 200000 },
+//     { id: 2, name: "Компания Б", industry: "Финансы", employees: 300, revenue: 500000 },
+//     { id: 3, name: "Компания В", industry: "Производство", employees: 500, revenue: 750000 },
+//     { id: 4, name: "Компания Г", industry: "Ритейл", employees: 50, revenue: 100000 },
+//     { id: 5, name: "Компания Д", industry: "IT", employees: 200, revenue: 300000 },
+//     { id: 6, name: "Компания Е", industry: "Логистика", employees: 100, revenue: 150000 }
+// ];
+
+// // Задача 1: Отфильтровать компании, относящиеся к индустрии IT.
+
+
+// function it(ind) {
+//     for (const comp of companies) {
+        
+//         if (comp.industry == "IT") {
+//             ind.push(comp)
+//         }
+//     }
+// }
+
+
+// it(industryIt = [])
+// console.log(industryIt);
+
+// // Задача 2: Отсортировать компании по доходу в порядке убывания.
+
+//  function rev(companies) {
+//     const a = companies.length
+//     const arr = [...companies]
+
+//     for (let i = 0; i < a -1; i++) {
+
+//         for (let j = 0; j < a -1 -i; j++) {
+
+//             if (arr[j].revenue < arr[j + 1].revenue) {
+
+//                 let temp = arr[j]
+//                 arr[j] = arr[j + 1]
+//                 arr[j + 1] = temp
+
+//             }
+//         }
+//     }
+//     return arr;
+//  }
+ 
+//  console.log(sort = rev(companies));
+ 
+
+
+// // Задача 3: Посчитать общее количество сотрудников во всех компаниях.
+
+
+//  function totalQuantity() {
+//     let total = 0
+//     for (let company of companies) {
+//         total += company.employees
+//     }
+
+//     return total;
+//  }
+
+ 
+//  console.log(totalQuantity());
+ 
+
+
+
+
+
+// Повторить все о массивах (объекты, функции)
