@@ -1,66 +1,75 @@
-const products = [
-    { id: 1, name: "Laptop", price: 1200, category: "electronics", rating: 4.5 },
-    { id: 2, name: "Phone", price: 800, category: "electronics", rating: 4.7 },
-    { id: 3, name: "Chair", price: 150, category: "furniture", rating: 4.2 },
-    { id: 4, name: "Watch", price: 250, category: "accessories", rating: 4.0 },
-    { id: 5, name: "Headphones", price: 100, category: "electronics", rating: 3.9 },
-    { id: 6, name: "Sofa", price: 700, category: "furniture", rating: 4.3 },
+const employees = [
+    { id: 1, name: "Alice", department: "HR", salary: 3000, projects: ["ProjectA", "ProjectB"] },
+    { id: 2, name: "Bob", department: "IT", salary: 4000, projects: ["ProjectC"] },
+    { id: 3, name: "Charlie", department: "IT", salary: 3500, projects: ["ProjectC", "ProjectD"] },
+    { id: 4, name: "Diana", department: "Marketing", salary: 2800, projects: [] },
+    { id: 5, name: "Eve", department: "IT", salary: 5000, projects: ["ProjectE"] },
+    { id: 6, name: "Frank", department: "HR", salary: 3200, projects: ["ProjectA"] }
 ];
 
 /*
-1. Используя метод filter, создайте новый массив, содержащий только те продукты,
-   которые относятся к категории "electronics" и имеют рейтинг выше 4.6.
+Задачи:
  
-2. Используя метод find, найдите первый продукт, у которого цена ниже 200 и рейтинг выше 4.0.
+1. Фильтрация:
+   С помощью метода filter создайте новый массив сотрудников из отдела "IT", 
+   у которых зарплата выше 3500.
  
-3. С помощью метода map создайте новый массив, где для каждого продукта добавлено новое свойство "discountPrice".
-   Для продуктов категории "electronics" применяется скидка 10% от цены, для остальных продуктов цена остается без изменений.
+2. Поиск:
+   Используя метод find, найдите первого сотрудника, который участвует в проекте "ProjectD".
  
-4. Используя метод reduce, сгруппируйте продукты по категориям.
-   Результат должен быть объектом, где ключи — категории, а значения — массивы продуктов, принадлежащих к этой категории.
+3. Преобразование:
+   С помощью метода map создайте новый массив, где для каждого сотрудника добавлены два новых свойства:
+   - annualSalary: годовая зарплата (месячная зарплата * 12)
+   - projectCount: количество проектов сотрудника.
  
-5. Проверьте, существует ли в массиве хотя бы один продукт из категории "furniture" с рейтингом ниже 4.0.
+4. Группировка:
+   Используя метод reduce, сгруппируйте сотрудников по отделам.
+   Результат должен быть объектом, где ключи — названия отделов, а значения — массивы сотрудников, работающих в этих отделах.
  
-6. Отсортируйте массив продуктов по цене в порядке убывания, а затем с помощью метода map получите массив названий продуктов в этом порядке.
+5. Проверка условия:
+   С помощью метода массива проверьте, есть ли среди сотрудников хотя бы один, у кого нет назначенных проектов (пустой массив projects).
+ 
+6. Сортировка и преобразование:
+   Отсортируйте массив сотрудников по количеству проектов в порядке убывания, а затем получите массив их имен.
 */
 
 
 //==== 1 ====\\
 
-const filteredProducts = products.filter((item) => item.category === 'electronics' && item.rating > 4.6)
+const filteredEmployees = employees.filter((item) => item.department === 'IT' && item.salary > 3500)
 
-console.log(filteredProducts);
+console.log(filteredEmployees);
 
 //==== 2 ====\\
 
-const foundProduct = products.find(item => item.price < 200 && item.rating > 4.0)
+const findEmployees = employees.find((item) => item.projects.find((elem) => elem === 'ProjectD'))
 
-console.log(foundProduct);
+console.log(findEmployees);
 
 //==== 3 ====\\
 
-const discountPrice = products.map(elem => {
+const conversionEmployees = employees.map((elem) => {
+    let annualSalary = elem.salary * 12
+    let projectCount = elem.projects.length
 
-    let discountPrice = elem.category === 'electronics' ? elem.price * 0.9 : elem.price
-
-    return {...products, discountPrice}
+    return {...employees, annualSalary, projectCount}
 })
 
-console.log(discountPrice);
+console.log(conversionEmployees);
 
 //==== 4 ====\\
 
-// Четверты не сделал так как не особо знаком с reduce
+// я не знаю reduce :_(
 
 //==== 5 ====\\
 
-const hasLowRatedFurniture = products.filter(elem => elem.category === 'furniture' && elem.rating < 4.0)
 
-console.log(hasLowRatedFurniture);
+const checkEmployees = employees.find((elem) => elem.projects.length === 0)
+
+console.log(checkEmployees);
 
 //==== 6 ====\\
 
-const sortedProduct = products.slice().sort((a, b) => b.price - a.price).map(products => products.name)
+const sortedEmployees = employees.sort((a, b) => b.projects.length - a.projects.length).map(employees => employees.name)
 
-console.log(sortedProduct);
-
+console.log(sortedEmployees);
